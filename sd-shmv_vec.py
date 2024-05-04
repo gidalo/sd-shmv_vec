@@ -22,8 +22,17 @@ switchPin = 6
 
 GPIO.setup(switchPin, GPIO.IN)
 GPIO.input(switchPin)
-while True:
-  input = GPIO.input(switchPin)
-  if (input == 1):
-    os.system("sudo shutdown -h now")
-    time.sleep(0.06)
+time.sleep(20)
+
+ButtonONOFF = 0
+
+while True: #loop
+  inputgpio = GPIO.input(switchPin)
+  if (ButtonONOFF == inputgpio ):
+     os.system("sudo shutdown -h now")
+     time.sleep(0.06)
+
+
+
+
+
