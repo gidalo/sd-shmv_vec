@@ -8,7 +8,20 @@
 # GNU General Public License version 3
 # https://www.gnu.org/licenses/gpl-3.0.en.html
 #
-
+#   /boot/config.txt
+#  | #Uncomment some or all of these to enable the optional hardware interfaces
+#  | #dtparam=i2c_arm=on
+#  | #dtparam=i2s=on
+# > | dtparam=spi=on
+#  |
+#  | #Uncomment this to enable infrared communication.
+#  | #dtoverlay=gpio-ir,gpio_pin=17
+#  | #dtoverlay=gpio-ir-tx,gpio_pin=18
+#  |
+#  | #Additional overlays and parameters are documented /boot/overlays/README
+#  >| dtoverlay=gpio-shutdown, active_low, gpiopin=6
+#  >| gpio=6=op,dl,pn
+#
 import os
 import time
 import RPi.GPIO as GPIO
