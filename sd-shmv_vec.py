@@ -22,6 +22,8 @@
 #  >| dtoverlay=gpio-shutdown, active_low, gpiopin=6
 #  >| gpio=6=op,dl,pn
 #
+#   Button normal close "use pin GPIO06 and GND" 
+#
 import os
 import time
 import RPi.GPIO as GPIO
