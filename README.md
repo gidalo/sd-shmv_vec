@@ -16,3 +16,4 @@ sd-shmv_vec.py
 dtparam=spi=on
 dtoverlay=gpio-poweroff,active_low,gpiopin=6
 gpio=6=op,dl,pn
+
