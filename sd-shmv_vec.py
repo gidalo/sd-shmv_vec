@@ -27,4 +27,3 @@ while True:
   if (input == 1):
     os.system("sudo shutdown -h now")
     time.sleep(0.06)
-GPIO.cleanup()
