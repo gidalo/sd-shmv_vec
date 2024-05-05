@@ -10,6 +10,22 @@
 * sudo apt install wiringpi
 * gcc -o  sd-shmv_vec  sd-shmv_vec.c -lwiringPi
 *
+*   /boot/config.txt
+*  | #Uncomment some or all of these to enable the optional hardware interfaces
+*  | #dtparam=i2c_arm=on
+*  | #dtparam=i2s=on
+* > | dtparam=spi=on
+*  |
+*  | #Uncomment this to enable infrared communication.
+*  | #dtoverlay=gpio-ir,gpio_pin=17
+*  | #dtoverlay=gpio-ir-tx,gpio_pin=18
+*  |
+*  | #Additional overlays and parameters are documented /boot/overlays/README
+*  >| dtoverlay=gpio-shutdown, active_low, gpiopin=6
+*  >| gpio=6=op,dl,pn
+*
+*   Button normal close "use pin GPIO06 and GND"
+*
 */
 
 #include <stdio.h>
